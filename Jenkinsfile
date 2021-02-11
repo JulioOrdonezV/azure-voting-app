@@ -9,7 +9,7 @@ pipeline {
         }
         stage('docker build') {
             steps {
-                sh 'docker build -t azure-app-pipeline ./azure-vote"'
+                sh 'docker build -t azure-app-pipeline ./azure-vote'
             }
         }
     }
