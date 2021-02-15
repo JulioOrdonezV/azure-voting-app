@@ -17,7 +17,7 @@ pipeline {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'DockerHub-secret') {
 
-                    def customImage = docker.image("azure-app-pipeline:${env.BUILD_ID}")
+                    def customImage = docker.image("azure-app-pipeline")
                     customImage.push()
                    }
                 }
